@@ -1,0 +1,68 @@
+.headercontainer {
+    height: 150px;
+    background: rgba(0, 0, 0, 0.70);
+    background-image: url('../../components/assets/fitnessPage/gymbackground.jpeg');
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+.mainheader {
+    /* H1 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    background: var(--Grey-gradiant, linear-gradient(96deg, #FFF 5.01%, #757575 98.91%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.username {
+    color: var(--White, #FFF);
+    /* H2 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+.headerline {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body condensed bold */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.topdiv {
+    height: 350.667px;
+}
+
+.focus {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body Uppercase */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.focusinfo {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body 3 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

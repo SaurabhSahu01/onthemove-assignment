@@ -13,6 +13,8 @@
     flex-shrink: 0;
     border-radius: 12px;
     background-color: black;
+    border: 1px solid rgba(209, 209, 209, 0.70);
+    mix-blend-mode: screen;
 }
 
 .buttonText {

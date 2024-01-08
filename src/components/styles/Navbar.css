@@ -1,0 +1,15 @@
+.navbar {
+    height: 78px;
+    flex-shrink: 0;
+    border-top: 0.25px solid #2E2E2E;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(37px);
+}
+
+.homeIndicator {
+    width: 131.97px;
+    height: 4.924px;
+    flex-shrink: 0;
+    border-radius: 98.485px;
+    background: var(--White, #FFF);
+}

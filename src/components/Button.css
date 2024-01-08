@@ -1,0 +1,24 @@
+.whiteButton {
+    width: 358px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Grey-gradiant, linear-gradient(96deg, #FFF 5.01%, #757575 98.91%));
+    mix-blend-mode: screen;
+}
+
+.blackButton {
+    width: 358px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.buttonText {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

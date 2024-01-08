@@ -1,0 +1,32 @@
+.calendar {
+    width: 43px;
+    height: 49px;
+    border-radius: 8px;
+    border: 1px solid var(--Light-gray, #B1B1B1);
+    background: rgba(37, 37, 37, 0.30);
+    backdrop-filter: blur(5px);
+}
+
+.textmonth {
+    color: var(--Light-gray, #B1B1B1);
+    text-align: center;
+    /* H3 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.textday {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 17.067px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21.333px;
+    /* 125% */
+}

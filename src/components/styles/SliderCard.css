@@ -1,0 +1,108 @@
+.cardcontainer {
+    width: 329px;
+    height: 398px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 0.5px solid #383838;
+    background: linear-gradient(180deg, #171717 0%, #0F0F0F 100%);
+}
+
+.cardheader {
+    color: var(--White, #FFF);
+    /* H2 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+.repscontainer {
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 0.5px solid var(--White, #FFF);
+    background: #1E1E1E;
+}
+
+.reps {
+    color: var(--White, #FFF);
+
+    /* Tags */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+}
+
+.prcontainer {
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--Flo-yellow, #DDF988);
+}
+
+.pr {
+    color: #000;
+
+    /* Tags */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+}
+
+.lastworkoutcontainer {
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--Purple, #7E87EF);
+}
+
+.workoutcount {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body condensed small */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.tapdetailscontainer {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--White, #FFF);
+    align-self: center;
+}
+
+.tapdetailstext {
+    color: #000;
+
+    /* Tags */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+}

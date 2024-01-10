@@ -30,7 +30,7 @@ function CustomSelect({ selectName, options, setValue, isDropdown = true }) {
     }
     const CustomSelectOptions = () => {
         return (
-            <div className='w-full h-full fixed top-0 right-0 flex flex-row items-center justify-center z-50 bg-black opacity-90'>
+            <div className='w-full h-full fixed top-0 right-0 flex flex-row items-center justify-center z-50 bg-black opacity-100'>
                 <div className='w-full h-fit flex flex-col justify-center items-center gap-1 rounded-md'>
                     {
                         options.map((option) => {

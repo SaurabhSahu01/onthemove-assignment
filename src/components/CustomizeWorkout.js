@@ -7,9 +7,9 @@ import Button from './Button'
 function CustomiseWorkout({setOpenModal}) {
   const [value, setValue] = useState(null);
   const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' },
+    { value: 'Value1', label: 'Value1' },
+    { value: 'Value2', label: 'Value2' },
+    { value: 'Value3', label: 'Value3' },
   ];
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import "./styles/CustomizeWorkout.css"
 
 
 function CustomSelect({ selectName, options, setValue, isDropdown = true }) {
-    const [selectedOption, setSelectedOption] = useState(options[1]["value"]);
+    const [selectedOption, setSelectedOption] = useState(options[0]["value"]);
     const [isOpen, setOpen] = useState(false);
 
     useEffect(() => {

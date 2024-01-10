@@ -2,16 +2,21 @@ import React, { useState, useEffect } from 'react'
 import "./styles/CustomizeWorkout.css"
 
 
-function CustomSelect({ options }) {
+function CustomSelect({ selectName, options, setValue }) {
     const [selectedOption, setSelectedOption] = useState(options[1]["value"]);
     const [isOpen, setOpen] = useState(false);
+
+    useEffect(() => {
+        setValue(prevValue => selectedOption);
+    }, [selectedOption])
+
     const CustomSelectOptions = () => {
         return (
             <div className='w-full h-fit flex flex-col justify-center items-center gap-1 bg-black rounded-md'>
                 {
                     options.map((option) => {
                         return (
-                            <div className={`w-[358px] h-[49px] rounded-md flex flex-row items-center justify-start px-5 ${selectedOption === option.value ? 'bg-[#2A2A2A]' : 'bg-black'}`} onClick={() => {
+                            <div className={`w-[358px] h-[49px] rounded-md flex flex-row items-center justify-start px-5 ${selectedOption === option.value ? 'bg-[#2A2A2A]' : 'bg-black'}`} key={option.label} onClick={() => {
                                 setSelectedOption(prevOption => option.value);
                                 setOpen(false);
                             }}>
@@ -24,7 +29,8 @@ function CustomSelect({ options }) {
         )
     }
     return (
-        <div>
+        <div className='flex flex-col justify-center items-start gap-2'>
+            <p className='selectName'>Hello</p>
             <div className='w-[358px] h-[49px] flex flex-row justify-between items-center px-5 rounded-[12px] border-[1px] border-[#2A2A2A]' onClick={() => {
                 setOpen(prevValue => !prevValue);
             }}>

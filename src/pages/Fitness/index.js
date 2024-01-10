@@ -34,6 +34,14 @@ function FitnessPage({ username, focus }) {
                 <ProgramCard nameOfProgram={"Gymanstic Strength"} numberOfMovements={4} isElite={false} />
                 <ProgramCard nameOfProgram={"Metcon"} numberOfMovements={4} isElite={true} />
                 <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
+                <ProgramCard nameOfProgram={"Strength"} numberOfMovements={4} isElite={false} />
             </div>
 
             <div className='w-full flex flex-col justify-center items-center gap-2 mt-3'>

@@ -17,7 +17,7 @@ function Navbar({ currentPageIndex, setCurrentpageIndex }) {
                     })
                 }
             </ul>
-            <div className='homeIndicator absolute bottom-0'></div>
+            
         </div>
     )
 }

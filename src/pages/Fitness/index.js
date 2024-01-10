@@ -2,6 +2,7 @@ import React from 'react'
 import WorkoutDay from '../../components/WorkoutDay'
 import Button from '../../components/Button'
 import ProgramCard from '../../components/ProgramCard'
+import CustomiseWorkout from '../../components/CustomizeWorkout'
 import "./styles.css"
 function FitnessPage({ username, focus }) {
     return (
@@ -48,6 +49,7 @@ function FitnessPage({ username, focus }) {
                 <Button isUpdateButton={true} placeholder={"Start"} onClick={() => console.log("hello")} />
                 <Button isUpdateButton={false} placeholder={"Customize Workout"} onClick={() => console.log("hello workout")} />
             </div>
+            <CustomiseWorkout/>
         </div>
     )
 }

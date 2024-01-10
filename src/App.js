@@ -6,11 +6,9 @@ import { useState } from 'react';
 import FitnessPage from './pages/Fitness';
 
 function App() {
-  const [currentPageIndex, setCurrentPageIndex] = useState(1);
   return (
     <div className="App flex flex-col justify-start items-center">
       <FitnessPage/>
-      <Navbar currentPageIndex={currentPageIndex} setCurrentpageIndex={setCurrentPageIndex}/>
     </div>
   );
 }

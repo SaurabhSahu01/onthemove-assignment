@@ -3,7 +3,7 @@ import Layout from './Layout'
 function Settings() {
   return (
     <Layout>
-        <div>Settings</div>
+        <div className='text-white text-2xl'>Settings</div>
     </Layout>
   )
 }

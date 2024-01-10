@@ -3,7 +3,7 @@ import Layout from './Layout'
 function Home() {
   return (
     <Layout>
-        <div>Home</div>
+        <div className='text-white text-2xl'>Home</div>
     </Layout>
 
   )

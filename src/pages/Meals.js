@@ -4,7 +4,7 @@ import Layout from './Layout'
 function Meals() {
   return (
     <Layout>
-        <div>Meals</div>
+        <div className='text-white text-2xl'>Meals</div>
     </Layout>
   )
 }

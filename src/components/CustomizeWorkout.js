@@ -21,7 +21,7 @@ function CustomiseWorkout({setOpenModal}) {
       <img src={crossicon} alt="crossicon" className='w-[26px] h-[26px] absolute top-5 right-4' onClick={() => setOpenModal(false)}/>
       <h2 className='heading mt-[35px]'>Customize your workout</h2>
       <div className='h-full flex flex-col justify-around items-center mb-5'>
-        <div className='h-full flex flex-col justify-center items-center gap-5'>
+        <div className='h-full flex flex-col justify-start items-center gap-5 mt-[100px]'>
           <CustomSelect selectName={"THEME"} options={options} setValue={setValue} isDropdown={false}/>
           <CustomSelect selectName={"Equipment(Optional)"} options={options} setValue={setValue} />
           <CustomSelect selectName={"Workout Duration"} options={options} setValue={setValue} />

@@ -1,48 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SliderCard from '../../components/SliderCard'
+import Slider from "react-touch-drag-slider";
 import "../Fitness/MovementComponent.css";
 import CustomInput from '../../components/CustomInput';
+import styled from "styled-components";
 
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
-// import required modules
-import { Pagination } from 'swiper/modules';
+const AppStyles = styled.main`
+  height: 430px;
+  width: 400px;
+`;
 
 function MovementComponent({ program }) {
+    const [slideIndex, setSlideIndex] = useState(0);
+    const setFinishedIndex = (i) => {
+        console.log("finished dragging on slide", i);
+        setSlideIndex(i);
+    };
     return (
         <div className='w-11/12 h-full flex flex-col items-center justify-start mt-3 gap-4'>
             <div className='w-full flex flex-col justify-center items-start gap-1'>
                 <h2 className='movementCompHeader text-left'>{program?.name}</h2>
                 <p className='movementCompDesc text-left'>{program?.description}</p>
             </div>
-            <div className='w-full flex flex-row items-center justify-center'>
-                <Swiper
-                    slidesPerView={'auto'}
-                    centeredSlides={true}
-                    spaceBetween={20}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                >
-                    {
-                        program?.movements.map((movement, index) => {
-                            return (
-                                <SwiperSlide>
+            <div className='w-full h-fit flex flex-row items-center justify-center'>
+                <AppStyles>
+                    <Slider
+                        onSlideComplete={setFinishedIndex}
+                        activeIndex={slideIndex}
+                        threshHold={100}
+                        transition={0.2}
+                        scaleOnDrag={true}
+                    >
+                        {
+                            program?.movements.map((movement, index) => {
+                                return (
                                     <SliderCard movement={movement} key={index} />
-                                </SwiperSlide>
-                            )
-                        })
-                    }
-                </Swiper>
+                                )
+                            })
+                        }
+                    </Slider>
+                    <div className='w-full flex flex-row justify-center items-center gap-3'>
+                        {
+                            program?.movements.map((movement, index) => {
+                                if(index === slideIndex){
+                                    return(
+                                        <div className='w-[20px] h-[5px] bg-white rounded-[5px]'></div>
+                                    )
+                                }
+                                else return (
+                                    <div className='w-[8px] h-[5px] bg-[#474747;] rounded-[5px]'></div>
+                                )
+                            })
+                        }
+                    </div>
+                </AppStyles>
             </div>
 
             <div className='w-full'>

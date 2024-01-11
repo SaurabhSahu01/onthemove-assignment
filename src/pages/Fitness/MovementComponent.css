@@ -1,0 +1,41 @@
+.movementCompHeader {
+
+    /* H1 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    background: var(--Grey-gradiant, linear-gradient(96deg, #FFF 5.01%, #757575 98.91%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.movementCompDesc {
+    color: var(--Light-gray, #B1B1B1);
+
+    /* Body condensed bold */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.movementCompDataInput {
+    color: var(--White, #FFF);
+
+    /* H2 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+.bulletClass{
+    background-color: white;
+}

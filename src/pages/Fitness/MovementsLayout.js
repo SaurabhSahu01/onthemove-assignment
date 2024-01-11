@@ -7,7 +7,6 @@ function MovementsLayout({ children }) {
       <div className='w-full pb-[85px]'>
         {children}
       </div>
-      <p className='text-white'>hellop</p>
       <MovementsSwiper/>
     </div>
   )

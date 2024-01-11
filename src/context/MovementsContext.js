@@ -5,7 +5,7 @@ export const MovementContext = createContext();
 
 const MovementState = ({children}) => {
     const userData = useContext(APIContext);
-    const maxMovements = userData?.program.length;
+    const maxMovements = userData?.program.length-1;
     const [movementCount, setMovementCount] = useState(1)
     return(
         <MovementContext.Provider value={[maxMovements, movementCount, setMovementCount]}>

@@ -1,14 +1,18 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import WorkoutDay from '../../components/WorkoutDay'
 import Button from '../../components/Button'
 import ProgramCard from '../../components/ProgramCard'
 import CustomiseWorkout from '../../components/CustomizeWorkout'
 import Layout from '../Layout'
 import { APIContext } from '../../context/APIContext'
+import { useNavigate} from 'react-router-dom'
+import { MovementContext } from '../../context/MovementsContext'
 import "./styles.css"
 function FitnessPage() {
+    const navigate = useNavigate();
     const [isOpenModal, setOpenModal] = useState(false);
     const userdata = useContext(APIContext);
+    const [maxMovements, movementCount, setMovementCount] = useContext(MovementContext);
 
     return (
         <Layout>
@@ -44,7 +48,10 @@ function FitnessPage() {
                         userdata && userdata.program.map((prog, index) => {
                             if (index !== 0) {
                                 return(
-                                    <ProgramCard nameOfProgram={prog.name} numberOfMovements={prog.movements.length} isElite={false}/>
+                                    <ProgramCard nameOfProgram={prog.name} numberOfMovements={prog.movements.length} isElite={false} onClick={() => {
+                                        setMovementCount(prevCount => index);
+                                        navigate('/fitness/movements');
+                                    }}/>
                                 )
                             }
                         })
@@ -52,7 +59,9 @@ function FitnessPage() {
                 </div>
 
                 <div className='w-full flex flex-col justify-center items-center gap-2 mt-3'>
-                    <Button isUpdateButton={true} placeholder={"Start"} onClick={() => console.log("hello")} />
+                    <Button isUpdateButton={true} placeholder={"Start"} onClick={() => {
+                        navigate('/fitness/movements')
+                    }} />
                     <Button isUpdateButton={false} placeholder={"Customize Workout"} onClick={() => setOpenModal(true)} />
                 </div>
                 {isOpenModal && <CustomiseWorkout setOpenModal={setOpenModal} />}

@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import NavigationContext from './context/navigationContext';
 import Movements from './pages/Fitness/Movements';
 import APIState from './context/APIContext';
+import MovementState from './context/MovementsContext';
 
 function App() {
   return (
@@ -15,16 +16,18 @@ function App() {
       <NavigationContext>
         <Routes>
           <Route path="/" element={<Home />} />
+          <MovementState>
           <Route path='fitness'>
-            <Route index element={<FitnessPage/>}/>
-            <Route path="movements" element={<Movements/>}/>
+            <Route index element={<FitnessPage />} />
+            <Route path="movements" element={<Movements />} />
           </Route>
-          <Route path="/meals" element={<Meals />} />
-          <Route path="/habits" element={<Habits />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </NavigationContext>
-    </APIState>
+        </MovementState>
+        <Route path="/meals" element={<Meals />} />
+        <Route path="/habits" element={<Habits />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </NavigationContext>
+    </APIState >
   );
 }
 

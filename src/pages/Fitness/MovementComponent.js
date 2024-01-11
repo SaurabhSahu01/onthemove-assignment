@@ -1,6 +1,7 @@
 import React from 'react'
 import SliderCard from '../../components/SliderCard'
 import "../Fitness/MovementComponent.css";
+import CustomInput from '../../components/CustomInput';
 
 
 // Import Swiper React components
@@ -44,16 +45,25 @@ function MovementComponent({ program }) {
                 </Swiper>
             </div>
 
-            {/* <div className='w-full'>
+            <div className='w-full'>
                 <h2 className='movementCompDataInput w-full text-start'>Data Inputs</h2>
-                {
-                    program?.dataInput.map((input, index) => {
-                        return(
-                            <input type={input.type} placeholder={input.placeholder}/>
-                        )
-                    })
-                }
-            </div> */}
+                <div className='flex flex-col justify-center items-start gap-3 mt-3'>
+                    {
+                        program?.dataInput.map((input, index) => {
+                            return (
+                                <CustomInput type={input?.type} placeholder={input?.placeholder} label={input?.label} options={input?.options} />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            <div className='w-[146px] h-[34px] bg-[#FA5757] rounded-[7px] flex flex-row items-center justify-center mt-7' onClick={() => {
+                console.log("workout ended");
+            }}>
+                <p className='flex flex-row justify-center items-center gap-1 endworkout'>END WORKOUT <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M10.2179 1.78125L1.78125 10.2179M10.2179 10.2179L1.78125 1.78125" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg></span></p>
+            </div>
         </div>
     )
 }

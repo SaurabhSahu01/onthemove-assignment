@@ -7,7 +7,7 @@ function CustomInput({ label, type, placeholder, options }) {
     const SelectComponent = () => {
         return (
             <div className='w-full flex flex-col justify-center items-start gap-1'>
-                <label for="customselect" className='label'>{label}</label>
+                <label htmlFor="customselect" className='label'>{label}</label>
                 <select className='w-full h-[30px] outline-none bg-transparent text-white border-b-[1px] border-b-[#B1B1B1]' id="customselect" name="customselect" onChange={(e) => {
                     value.current = {...value.current, [label]: e.target.value}
                 }}>
@@ -25,7 +25,7 @@ function CustomInput({ label, type, placeholder, options }) {
     const InputComponent = () => {
         return(
             <div className='w-full flex flex-col justify-center items-start gap-1'>
-                <label for="custominput" className='label'>{label}</label>
+                <label htmlFor="custominput" className='label'>{label}</label>
                 <input className='w-full h-[30px] outline-none bg-transparent text-white border-b-[1px] border-b-[#B1B1B1]' type={type} id="custominput" name="custominput" placeholder={placeholder} onChange={(e) => {
                     value.current[label] = e.target.value;
                 }}></input>

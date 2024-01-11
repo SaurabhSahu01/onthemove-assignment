@@ -45,11 +45,11 @@ function MovementComponent({ program }) {
                             program?.movements.map((movement, index) => {
                                 if(index === slideIndex){
                                     return(
-                                        <div className='w-[20px] h-[5px] bg-white rounded-[5px]'></div>
+                                        <div className='w-[20px] h-[5px] bg-white rounded-[5px]' key={index}></div>
                                     )
                                 }
                                 else return (
-                                    <div className='w-[8px] h-[5px] bg-[#474747;] rounded-[5px]'></div>
+                                    <div className='w-[8px] h-[5px] bg-[#474747;] rounded-[5px]' key={index}></div>
                                 )
                             })
                         }
@@ -63,7 +63,7 @@ function MovementComponent({ program }) {
                     {
                         program?.dataInput.map((input, index) => {
                             return (
-                                <CustomInput type={input?.type} placeholder={input?.placeholder} label={input?.label} options={input?.options} />
+                                <CustomInput type={input?.type} placeholder={input?.placeholder} label={input?.label} options={input?.options} key={index}/>
                             )
                         })
                     }
@@ -73,7 +73,7 @@ function MovementComponent({ program }) {
                 console.log("workout ended");
             }}>
                 <p className='flex flex-row justify-center items-center gap-1 endworkout'>END WORKOUT <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M10.2179 1.78125L1.78125 10.2179M10.2179 10.2179L1.78125 1.78125" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M10.2179 1.78125L1.78125 10.2179M10.2179 10.2179L1.78125 1.78125" stroke="black" strokeWidth="2" strokeLinecap="round" />
                 </svg></span></p>
             </div>
         </div>

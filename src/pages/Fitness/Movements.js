@@ -1,8 +1,10 @@
 import React from 'react'
-
+import MovementsLayout from './MovementsLayout'
 function Movements() {
   return (
-    <div>Movements</div>
+    <MovementsLayout>
+      <div>Movements</div>
+    </MovementsLayout>
   )
 }
 

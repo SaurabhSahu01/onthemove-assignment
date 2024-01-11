@@ -14,19 +14,19 @@ function App() {
   return (
     <APIState>
       <NavigationContext>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <MovementState>
-          <Route path='fitness'>
-            <Route index element={<FitnessPage />} />
-            <Route path="movements" element={<Movements />} />
-          </Route>
+        <MovementState>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='fitness'>
+              <Route index element={<FitnessPage />} />
+              <Route path="movements" element={<Movements />} />
+            </Route>
+            <Route path="/meals" element={<Meals />} />
+            <Route path="/habits" element={<Habits />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
         </MovementState>
-        <Route path="/meals" element={<Meals />} />
-        <Route path="/habits" element={<Habits />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </NavigationContext>
+      </NavigationContext>
     </APIState >
   );
 }

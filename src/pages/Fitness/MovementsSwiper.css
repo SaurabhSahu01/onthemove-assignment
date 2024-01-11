@@ -1,0 +1,43 @@
+.swiperContainer {
+    height: 98px;
+    flex-shrink: 0;
+    border-top: 0.5px solid #2E2E2E;
+    background: #000;
+}
+
+.arrowsContainer {
+    width: 103px;
+    height: 98px;
+    flex-shrink: 0;
+    background: var(--Green, #5ECC7B);
+}
+
+.arrow {
+    width: 22.837px;
+    height: 44.887px;
+    flex-shrink: 0;
+    stroke-width: 6.41px;
+    stroke: #000;
+}
+
+.movementText {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body Uppercase */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.movementIndicator {
+    color: var(--Light-gray, #B1B1B1);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 166.667% */
+}

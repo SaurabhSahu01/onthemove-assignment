@@ -60,6 +60,7 @@ function FitnessPage() {
 
                 <div className='w-full flex flex-col justify-center items-center gap-2 mt-3'>
                     <Button isUpdateButton={true} placeholder={"Start"} onClick={() => {
+                        setMovementCount(1);
                         navigate('/fitness/movements')
                     }} />
                     <Button isUpdateButton={false} placeholder={"Customize Workout"} onClick={() => setOpenModal(true)} />

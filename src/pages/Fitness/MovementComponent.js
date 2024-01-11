@@ -14,7 +14,6 @@ const AppStyles = styled.main`
 function MovementComponent({ program }) {
     const [slideIndex, setSlideIndex] = useState(0);
     const setFinishedIndex = (i) => {
-        console.log("finished dragging on slide", i);
         setSlideIndex(i);
     };
     return (

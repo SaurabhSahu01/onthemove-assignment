@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import "./MovementsLayout.css";
+import "../components/styles/MovementsLayout.css";
 import MovementsSwiper from './MovementsSwiper';
 import DetailsPage from './DetailsPage';
-import { MovementDetailContext } from '../../context/MovementDetailContext';
+import { MovementDetailContext } from '../context/MovementDetailContext';
 function MovementsLayout({ children }) {
   const [openModal, movementDetails, setOpenModal, setMovementDetails] = useContext(MovementDetailContext);
   return (

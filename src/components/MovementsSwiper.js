@@ -1,7 +1,7 @@
 import React from 'react'
-import "../Fitness/MovementsSwiper.css"
+import "../components/styles/MovementsSwiper.css"
 import { useContext } from 'react'
-import { MovementContext } from '../../context/MovementsContext'
+import { MovementContext } from '../context/MovementsContext'
 function MovementsSwiper() {
     const [maxMovements, movementCount, setMovementCount] = useContext(MovementContext);
     return (

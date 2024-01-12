@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import MovementsLayout from './MovementsLayout'
-import { MovementContext } from '../../context/MovementsContext'
-import { APIContext } from '../../context/APIContext'
+import { MovementContext } from '../context/MovementsContext'
+import { APIContext } from '../context/APIContext'
 import MovementComponent from './MovementComponent'
 function Movements() {
   const userData = useContext(APIContext);

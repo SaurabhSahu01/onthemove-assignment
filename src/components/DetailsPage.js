@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import crossicon from "../../components/assets/icons/crossicon.png"
-import Button from '../../components/Button'
-import { MovementDetailContext } from '../../context/MovementDetailContext'
-import "../Fitness/DetailsPage.css";
+import crossicon from "../components/assets/icons/crossicon.png"
+import Button from './Button'
+import { MovementDetailContext } from '../context/MovementDetailContext'
+import "../components/styles/DetailsPage.css";
 const DetailsPage = () => {
     const [openModal, movementDetails, setOpenModal, setMovementDetails] = useContext(MovementDetailContext);
     return (

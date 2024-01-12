@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import SliderCard from '../../components/SliderCard'
+import SliderCard from './SliderCard'
 import Slider from "react-touch-drag-slider";
-import "../Fitness/MovementComponent.css";
-import CustomInput from '../../components/CustomInput';
+import "../components/styles/MovementComponent.css";
+import CustomInput from './CustomInput';
 import styled from "styled-components";
 
 

@@ -9,22 +9,25 @@ import NavigationContext from './context/navigationContext';
 import Movements from './pages/Fitness/Movements';
 import APIState from './context/APIContext';
 import MovementState from './context/MovementsContext';
+import MovementDetailState from './context/MovementDetailContext';
 
 function App() {
   return (
     <APIState>
       <NavigationContext>
         <MovementState>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='fitness'>
-              <Route index element={<FitnessPage />} />
-              <Route path="movements" element={<Movements />} />
-            </Route>
-            <Route path="/meals" element={<Meals />} />
-            <Route path="/habits" element={<Habits />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
+          <MovementDetailState>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path='fitness'>
+                <Route index element={<FitnessPage />} />
+                <Route path="movements" element={<Movements />} />
+              </Route>
+              <Route path="/meals" element={<Meals />} />
+              <Route path="/habits" element={<Habits />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </MovementDetailState>
         </MovementState>
       </NavigationContext>
     </APIState >

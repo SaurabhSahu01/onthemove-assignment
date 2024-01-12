@@ -1,0 +1,35 @@
+.sliderDetailName {
+    color: var(--White, #FFF);
+
+    /* H1 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+}
+
+.sliderDetailCount {
+    color: var(--Light-gray, #B1B1B1);
+    /* Body */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 138.889% */
+}
+
+.sliderDetailDescription {
+    color: var(--Light-gray, #B1B1B1);
+    text-align: center;
+
+    /* Body */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 138.889% */
+}

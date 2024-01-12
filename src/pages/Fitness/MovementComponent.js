@@ -17,7 +17,7 @@ function MovementComponent({ program }) {
         setSlideIndex(i);
     };
     return (
-        <div className='w-11/12 h-full flex flex-col items-center justify-start mt-3 gap-4'>
+        <div className='w-11/12 h-full flex flex-col items-center justify-start mt-3 gap-4 mb-[98px]'>
             <div className='w-full flex flex-col justify-center items-start gap-1'>
                 <h2 className='movementCompHeader text-left'>{program?.name}</h2>
                 <p className='movementCompDesc text-left'>{program?.description}</p>

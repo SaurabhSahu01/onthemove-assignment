@@ -3,7 +3,7 @@ import "./styles/Navbar.css";
 import { outlinedIcons, filledIcons } from './assets/navbaricons';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { navContext } from '../context/navigationContext';
+import { navContext } from '../context/NavigationContext';
 
 function Navbar() {
     const [currentPageIndex, setCurrentPageIndex] = useContext(navContext);

@@ -5,7 +5,6 @@ function Home() {
   return (
     <Layout>
         <div className='text-white text-2xl'>Home</div>
-        <SliderCard/>
     </Layout>
 
   )

@@ -5,7 +5,7 @@ import Meals from './pages/Meals';
 import Habits from './pages/Habits';
 import Settings from './pages/Settings';
 import { Routes, Route } from 'react-router-dom';
-import NavigationContext from './context/navigationContext';
+import NavigationContext from './context/NavigationContext';
 import Movements from './pages/Fitness/Movements';
 import APIState from './context/APIContext';
 import MovementState from './context/MovementsContext';
